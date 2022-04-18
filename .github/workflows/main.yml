@@ -17,7 +17,7 @@ jobs:
     - run: pipenv install --python `which python`
     - name: geocode
       shell: bash
-      run: pipenv run jupyter execute geocode.ipynb
+      run: pipenv run jupyter execute coords.ipynb
     - name: Commit and push
       run: |-
         git pull
